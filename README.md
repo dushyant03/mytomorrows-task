@@ -22,5 +22,9 @@ In this repo, we are creating the resources for a document-handler API. The reso
 - The RDS instance can be multi-AZ for prod and non multi-AZ for lower environments, also saving cost
 - This code can be run in a pipeline with multiple stages of a terraform plan, apply for various environments.
 - An s3 backend can be used to store the statefile with a dynamo DB lock
+- The application can be dockerized within the application repos, as a CI pipeline step, and then another step to push the image to ECR.
+
+# Ad-hoc environments
+- This code can be used to spin up resources in multiple AWS accounts as required destroyed accordingly via terraform.
 
 
